@@ -18,7 +18,7 @@ function App() {
 
         <Header />
 
-        <div className="flex w-full flex-col gap-5 lg:px-40 lg:py-16 text-white">
+        <div className="flex w-full flex-col gap-5 lg:px-40 text-white">
           <Detail />
           <About />
           <Skills />
