@@ -31,7 +31,7 @@ export default function Contact() {
         Facebook
         </a>
         if that's more your speed.</p>
-        <a href='mailto:diyarimohammed33@gmail.com' className='lg:text-lg text-md mt-5 font-semibold text-emerald-500 cursor-pointer'><i className="fa-solid fa-envelope" style={{color: "#10b981", marginRight: "5px"}}></i>diyarimohammed33@gmail.com</a>
+        <a href='mailto:diyarimohammed33@gmail.com' className='lg:text-lg text-sm mt-5 font-semibold text-emerald-500 cursor-pointer'><i className="fa-solid fa-envelope" style={{color: "#10b981", marginRight: "5px"}}></i>diyarimohammed33@gmail.com</a>
       </motion.div>
     </div>
   )
