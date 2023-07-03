@@ -34,7 +34,7 @@ export default function Detail() {
         {/* Right Side */}
         <motion.div
         whileInView={{x : [-100 , 0]}}
-        transition={{type : "spring", yoyo : Infinity}}
+        transition={{type : "spring", yoyo : Infinity, duration : 1.5}}
         >
           <img className='object-cover' src='/dev.png' alt='me' />
         </motion.div>
