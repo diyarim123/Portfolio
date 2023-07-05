@@ -13,7 +13,7 @@ export default function Skills() {
             <h3 className='text-3xl flex font-bold items-center'>Skills <span className='text-emerald-500 text-4xl'>.</span></h3>
         </motion.div>
 
-        <div className='grid lg:grid-cols-5 grid-cols-3 lg:gap-10 gap-5 my-10'>
+        <div className='grid lg:grid-cols-5 grid-cols-2 lg:gap-10 gap-5 my-10'>
 
             <motion.div
             className='bg-slate-800 p-5 flex flex-col justify-center gap-3 items-center rounded-md'
