@@ -23,7 +23,16 @@ export default function Projects() {
       github: "https://github.com/diyarim123/gamezone",
     },
     {
-      id: 3,
+      id : 3,
+      name: "CV Builder",
+      img: "/cv.png",
+      detail: "Craft a CV that's both visually stunning and technically sound. Our sleek interface powered by React JS, Yup, Formik, and Ant Design ensures a seamless experience, while industry-standard formatting and intuitive guidance guarantee a polished final product. Let your CV speak volumes without a single line of code.",
+      skills: ["React.js", "Redux.js","Formik","Ant Design","Yup"],
+      link: "https://cv-generator-vercel.netlify.app/",
+      github: "https://github.com/diyarim123/cv-generator"
+    },
+    {
+      id: 4,
       name: "Tindog",
       img: "/dog.png",
       detail: "Tindog: The ultimate mobile app for canine companionship, connecting dogs and their owners in a tail-wagging world of friendships.",
@@ -32,7 +41,7 @@ export default function Projects() {
       github: "https://github.com/diyarim123/Tindog"
     },
     {
-      id: 4,
+      id: 5,
       name : "Simon",
       img :"/simon.png",
       detail : "Simon Game: Test your memory and reflexes with this classic electronic memory game brought to life on the web.",
@@ -41,7 +50,7 @@ export default function Projects() {
       github : "https://github.com/diyarim123/Simon-Game"
     },
     {
-      id: 5,
+      id: 6,
       name : "Calculator",
       img : "/calculator.png",
       detail : "An online calculator website providing a versatile range of tools for performing quick and accurate mathematical calculations with ease.",
@@ -50,7 +59,7 @@ export default function Projects() {
       github : "https://github.com/diyarim123/Calculator"
     },
     {
-      id : 6,
+      id : 7,
       name : "Cash System",
       img : "/cash.png",
       detail : "A comprehensive cash system website that streamlines financial transactions, ensuring secure and efficient management of cash flow for businesses.",
@@ -79,9 +88,9 @@ export default function Projects() {
 
       {/* Content */}
       <div
-      className="grid lg:grid-cols-2 grid-cols-1 gap-10"
+      className="grid lg:grid-cols-3 grid-cols-1 gap-10"
       >
-        {datas.slice(0 , open ? 6 : 2).map((data) => (
+        {datas.slice(0 , open ? 6 : 3).map((data) => (
           <motion.div
           key={data.id}
           whileInView={{y : [50, 0]}}
