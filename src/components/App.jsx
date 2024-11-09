@@ -1,10 +1,11 @@
-import About from "./About.js";
-import Contact from "./Contact.js";
-import Detail from "./Detail.js";
-import Header from "./Header.js";
-import Projects from "./Projects.js";
-import Skills from "./Skills.js";
-import Slider from "./Slider"
+import About from "./About.jsx";
+import Experience from "./Experience.jsx";
+import Contact from "./Contact.jsx";
+import Detail from "./Detail.jsx";
+import Header from "./Header.jsx";
+import Projects from "./Projects.jsx";
+import Skills from "./Skills.jsx";
+import Slider from "./Slider.jsx"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <div className="flex w-full flex-col gap-5 lg:px-40 text-white">
           <Detail />
           <About />
+          <Experience />  
           <Skills />
           <Projects />
           <Contact />
