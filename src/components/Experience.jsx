@@ -3,6 +3,14 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    company: "FAM",
+    logo: "/assets/images/fam.png",
+    title: "Computer Science Educator",
+    type: "Onsite, Full-time",
+    duration: "September 2025 - Present",
+    description: "Currently serving as a Computer Science Educator at FAM, where I develop curriculum and teach foundational and advanced technology concepts. My responsibilities include delivering lectures, preparing comprehensive seminars, and authoring technical articles on modern subjects like machine learning. This role allows me to mentor the next generation of tech professionals while continuously refining my own technical communication, leadership, and analytical skills."
+  },
+  {
     company: "Kitn",
     logo: "/assets/images/kitn.png",
     title: "Full-Stack Web Developer",

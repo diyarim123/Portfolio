@@ -3,12 +3,12 @@ import { motion } from 'framer-motion'
 
 export default function Detail() {
   return (
-    <div id='home' className='mb-20 flex lg:flex-row flex-col items-center'>
+    <div id='home' className='mb-20 flex lg:flex-row flex-col items-center justify-between w-full gap-10 lg:gap-0'>
 
         {/* Left Side */}
         <div className='flex flex-col gap-3 p-5'>
           <p className='text-lg lg:text-2xl font-500'>Hello, <span className='text-emerald-500'>I'm</span></p>   
-          <motion.dv
+          <motion.div
           whileInView={{
             x : [200, 0],
             opacity : [0.25, 1],
@@ -17,7 +17,7 @@ export default function Detail() {
           transition = {{duration : 1.25, yoyo : Infinity}}
           >
           <h2 className='text-emerald-500 font-600 text-4xl lg:text-5xl'>Diyari Mohammed.</h2>
-          </motion.dv>
+          </motion.div>
           <motion.div
           whileInView={{
             x : [-200, 0]
@@ -33,10 +33,20 @@ export default function Detail() {
 
         {/* Right Side */}
         <motion.div
-        whileInView={{x : [-100 , 0]}}
-        transition={{type : "spring", yoyo : Infinity, duration : 1.5}}
+        initial={{ scale: 0.8, opacity: 0, x: 50 }}
+        whileInView={{ scale: 1, opacity: 1, x: 0 }}
+        transition={{ type: "spring", duration: 1.5 }}
+        className="relative mt-12 lg:mt-0 flex justify-center items-center lg:px-10"
         >
-          <img className='object-cover' src='/assets/images/dev.png' alt='me' />
+          {/* Glowing backdrop effect */}
+          <div className="absolute w-56 h-56 lg:w-80 lg:h-80 bg-emerald-500/30 rounded-full blur-3xl z-0 animate-pulse"></div>
+          
+          {/* Image */}
+          <img 
+            className='relative z-10 w-64 h-64 lg:w-[22rem] lg:h-[22rem] object-cover rounded-full border-4 border-slate-800 shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:border-emerald-500/80 transition-all duration-500 hover:scale-105' 
+            src='/assets/images/me.jpg' 
+            alt='Diyari Mohammed' 
+          />
         </motion.div>
     </div>
   )
