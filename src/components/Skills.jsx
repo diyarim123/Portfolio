@@ -10,6 +10,7 @@ const skills = [
   { name: "Express.js", src: "/assets/images/express.png" },
   { name: "MySQL", src: "/assets/images/mysql.png" },
   { name: "PostgreSQL", src: "/assets/images/postgresql.png" },
+  { name: "Prisma ORM", src: "/assets/images/prisma.png" },
   { name: "MongoDB", src: "/assets/images/mongodb.png" },
   { name: "Redux", src: "/assets/images/redux.png" },
   { name: "HTML5", src: "/assets/images/html.png" },
